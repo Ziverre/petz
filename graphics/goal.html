@@ -10,9 +10,25 @@
     In general, the goal with re-implementing the Petz graphics co-exists of:
     <ul>
         <li>1. Keep the spirit of original Petz graphics while allowing more flexibility for the modders (hexers as the community has coined)</li>
-        <li>2. Make use of modern technology (hardware acceleration instead of software rendering)</li>
+        <li>2. Make use of modern technology (hardware acceleration instead of software rendering) and address certain limitations in original Petz</li>
         <li>3. Address the flaws of how certain things are rendered in original games (e.g eyelids)</li>
-        <li>4. Add certain features that are missing in original Petz</li>
     </ul>
+    
+    <h3>1. Keep the spirit of original Petz graphics while allowing more flexibility for the modders:</h3>
+    <p>The charm of Petz (at least before Petz 5) relies the fact that the game had to fit into the 256 color palette limitation (dithered background image being an example). However it would be nice to cut slack on modders by providing more flexibility, for example: 
+        <ul>
+            <li>Allow for bigger domain of color palette instead of the original 256 one (either custom 256 color palettes, or RGBA)</li>
+            <li>Allow transparency in Textures.</li>
+            <li>Allow Polygonz, which is already implemented in Babyz.</li>
+            <li>Add support for more file formats, such as PNG.</li>
+        </ul>
+    </p>
+    <h3>2. Make use of modern technology (hardware acceleration instead of software rendering) and address certain limitations in original Petz</h3>
+    <p>
+        It makes sense to dedicate rendering graphics to the GPU nowadays (integrated GPUs should be able to handle it, it is not like it is going to be an AAA game), as it allows us to be able to handle things the better way. (better in this sense means more effectively)<br>
+        There is no need to put a hard limit on the maximum amount of ballz and linez rendered in the whole game in one single frame (unless the user specifies it for performance reasons) 
+    </p>
+    <h3>3. Address the flaws of how certain things are rendered in original games:</h3>
+    <p>The way eyelids are rendered is a good example :)</p>
 </body>
 </html>
